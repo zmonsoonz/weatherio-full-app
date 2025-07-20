@@ -98,7 +98,7 @@ const useTodayWeatherService = () => {
     }
 
     const getLinks = async () => {
-        const res = await request(`http://127.0.0.1:8000/links`)
+        const res = await request(`/links`)
         return res
     }
 
