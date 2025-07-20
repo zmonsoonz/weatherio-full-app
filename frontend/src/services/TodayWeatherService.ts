@@ -98,7 +98,7 @@ const useTodayWeatherService = () => {
     }
 
     const getLinks = async () => {
-        const res = await request(`/links`)
+        const res = await request(`/api/links`)
         return res
     }
 
