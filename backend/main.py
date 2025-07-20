@@ -31,6 +31,7 @@ app.add_middleware(
     allow_origins=[
         "http://localhost:3000",
         "178.130.61.91",
+        "danilamokrov.ru",
     ],
     allow_credentials=True,
     allow_methods=["*"],
