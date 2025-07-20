@@ -1,0 +1,32 @@
+@import "../styles/styles";
+
+.container {
+    max-width: 1440px;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding-inline: 20px;
+    @include flex-column;
+}
+
+.main {
+    display: flex;
+    gap: var(--main-gap);
+    padding-bottom: 20px;
+    @include tablet {
+        @include flex-column;
+    }
+
+    &__left {
+        @include flex-column;
+        gap: var(--main-gap);
+    }
+
+    &__right {
+        @include flex-column;
+        gap: var(--main-gap);
+        width: 100%;
+        @include tablet {
+            display: contents;
+        }
+    }
+}
