@@ -23,7 +23,7 @@ links_data = [
 ]
 
 @app.get("/links")
-def get_links():
+async def get_links():
     return links_data
 
 app.add_middleware(
